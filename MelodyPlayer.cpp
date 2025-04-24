@@ -1,6 +1,6 @@
 #include "MelodyPlayer.h"
 #include <Arduino.h>
-#include "LighstController.h"
+#include "LightsController.h"
 #include "Config.h"
 
 int songPart = 0;
@@ -12,7 +12,7 @@ void initMelodyPlayer() {
 }
 
 void playSongPart(int part, int distance, int sensorIndex) {
-    bool higherOctave = (distance > 60);
+    bool higherOctave = (distance > 100);
     int note = 0;
 
     switch (part) {

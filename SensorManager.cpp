@@ -3,9 +3,9 @@
 #include "Config.h"
 
 Sensor sensors[NUM_SENSORS] = {
-    {7, 6, 10}, // Sensor 1
+    {7, 6, 12}, // Sensor 1
     {5, 4, 11}, // Sensor 2
-    {8, 9, 12}  // Sensor 3
+    {8, 9, 10}  // Sensor 3
 };
 
 void initSensors() {

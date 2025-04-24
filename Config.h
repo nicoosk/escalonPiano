@@ -6,7 +6,7 @@
 
 // Rangos validos de detección
 const int MIN_DETETION_DISTANCE = 5;
-const int MAX_DETETION_DISTANCE = 120;
+const int MAX_DETETION_DISTANCE = 200;
 
 // Tiempos del sistema (milis)
 const unsigned long PART_INTERVAL = 1000;
