@@ -1,10 +1,10 @@
 #include "MelodyPlayer.h"
 #include <Arduino.h>
-#include "LightsController.h"
+#include "LighstController.h"
 #include "Config.h"
 
 int songPart = 0;
-const int totalParts = TOTAL_PARTS;
+
 
 void initMelodyPlayer() {
     pinMode(BUZZER_PIN, OUTPUT);

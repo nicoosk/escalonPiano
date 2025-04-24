@@ -36,9 +36,14 @@ void loop(){
     sensorWasActive = false;
   }
 
-  if (millis() - lastDetectionTime > RESET_INTERVAL) {
+  int millis2 = millis();
+  if (millis2 - lastDetectionTime > RESET_INTERVAL) {
     resetSystem();
-    Serial.println("Canción reiniciada por inactividad.");
+    Serial.println(lastDetectionTime);
+    Serial.println(millis2);
+    Serial.println("Resultado variables: ");
+    Serial.print(millis2 - lastDetectionTime); 
+    //Serial.println("Canción reiniciada por inactividad.");
   }
 }
 
